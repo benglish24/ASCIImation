@@ -1,0 +1,33 @@
+body{
+	background-color:#CCCCFF;
+	font-family:sans-serif;
+	font-size:14pt;
+	font-weight:bold;
+}
+h1{
+	font-size:32pt;
+	font-weight:bold;
+	text-align:center;
+	margin:0;
+}
+#mytextarea{
+	width:90%;
+	height:400px;
+	font-size:12pt;
+	font-family:monospace;
+	display:inline-block;
+	position:relative;
+	left:65px;
+}
+fieldset{
+	border:5px solid black;
+	border-radius:10px;
+	display:inline;
+	vertical-align:top;
+	text-align:center;
+	position:relative;
+	left:350px;
+}
+.validators{
+	float:right;
+}

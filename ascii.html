@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--Braxton English/INFX370/ This html setup displays several buttons beneath a textarea
+element. Each of the buttons has options with distinct values, with the last being a 
+checkbox to change the speed of the interval at which animations are displayed. Each button
+has a value that is read by the JS code and uses each value to determine how the animation
+is presented, depending on speed, font size and what the animation is-->
+<html>
+	<head>
+	<title>ASCIImation</title>
+	<meta charset="utf-8" />
+		<link href="ascii.css" type="text/css" rel="stylesheet"/>
+		<script src="ascii.js" type="text/javascript"></script>
+		<script src="animations.js" type="text/javascript"></script>
+		
+	</head>
+
+<body>
+<h1>ASCII Animation Viewer</h1>
+<textarea id="mytextarea" rows="20" cols="80"></textarea>
+<div>
+	<!--Creates the start and stop buttons-->
+	<fieldset>
+		<legend>Player Controls:</legend>
+			<button id="start">Start</button>
+			<button id="stop">Stop</button>
+	</fieldset>
+	<!--Changes the animation selected by the user-->
+	<fieldset>
+		<legend>Animation:</legend>
+		<select id="animation">
+			<option selected = "selected" value="blank">Blank</option>
+			<option value="exercise">Exercise</option>
+			<option value="juggler">Juggler</option>
+			<option value="bike">Bike</option>
+			<option value="dive">Dive</option>
+		</select>
+	</fieldset>
+	<!--Changes the size of the animation-->
+	<fieldset>
+		<legend>Size:</legend>
+		<select id="size">
+			<option value="7pt">Tiny</option>
+			<option value="10pt">Small</option>
+			<option selected = "selected" value="12pt">Medium</option>
+			<option value="16pt">Large</option>
+			<option value="24pt">Extra Large</option>
+			<option value="32pt">XXL</option>
+		</select>
+	</fieldset>
+	<!--Changes the speed to either turbo or regular-->
+	<fieldset>
+		<legend>Speed:</legend>
+		<input type="checkbox" id="speed">Turbo
+	</fieldset>
+</div>
+<!--Validators-->
+<div class="validators">
+<p><img src = "w3c-css.png" alt = "CSS Validator"/></p>
+<p><img src = "w3c-html.png" alt = "HTML Validator"/></p>
+<p><img src = "w3c-js.png" alt = "JavaScript Validator"/></p>
+</div>
+
+</body>
+
+</html>
